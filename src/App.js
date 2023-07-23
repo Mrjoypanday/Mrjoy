@@ -3,6 +3,7 @@ import { Cursor, Typewriter } from "react-simple-typewriter";
 import "./App.css";
 
 function App() {
+  window.addEventListener("contextmenu", (e) => e.preventDefault());
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
